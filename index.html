@@ -1,0 +1,142 @@
+<!-- DOCTYPE is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in. -->
+<!DOCTYPE html>
+<!-- html is a markup language for web pages -->
+<html> 
+    <!-- <head> element is a container for metadata (data about data) -->
+        <!-- Metadata typically define the document title, character set, styles, scripts, and other meta information -->
+        <!-- he following tags describe metadata: <title>, <style>, <meta>, <link>, <script>, and <base> -->
+<head>
+    <!-- (<link>) specifies relationships between the current document and an external resource. -->
+    <!-- This element is most commonly used to link to stylesheets, -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script type="text/javascript" src="./lib/jquery-3.3.1.min.js"></script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>training page</title>
+<script type="text/javascript">
+    jQuery(document).ready(function(){
+
+        // Show an alert popup message.
+
+        // Get the button object by it's id.
+        var button = jQuery('#signUp')
+
+        // When click this button then execute below function.
+        button.bind('click', function () {
+
+            // Get button original text.
+            const original_text = jQuery(this).text();
+            var email = $('#email').val
+            // Alert the text.
+            alert('You click the button');
+            alert($('#email').val(email))
+            alert('The original button text is : ' + original_text);
+               
+            // Set the button new text. And change the button text and background color.
+            jQuery(this).text('Wish you like JQuery :)').css({color:'yellow', background:'blue'});
+         
+        })
+
+    });
+</script>
+</head>
+<body>
+    <!-- container of my page  -->
+<div class="main-page-container">
+    <div class="container-fluid p-4 pr-0 pt-20">
+        <div class=" row text-left p-40 space-between">
+            <h3 class="header-style mr-auto ml-0 p-1">WithCenter.inc</h3>
+
+            <div class="dropdown-list" >
+                <span class="span-header">Login</span>
+                <div class="dropdown-content-list">
+                    <p  style="font-size: 10px;"> Login With FB</p>
+                     <div   style="font-size: 10px;">Google Log In
+                        <span class="dropdown-list">second</span>
+                        <ul >
+                            <li class="dropdown-content-list">qwe1</li>
+                            <li class="dropdown-content-list">qwe2</li>
+                        </ul>
+                  </div>
+                  
+                </div>
+              </div>
+              
+            <button type="button"  class="signup-btn-style btn btn-primary h-100 rounded-pill"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Sign Up</button>
+        </div>
+    </div>
+<!-- dropdown-->
+
+<div class="container justify-conytent-center d-flex " >
+    <div class="row">
+        <div class=" col-md-6 text-center ">
+              <div class="left-content">
+                    <h2>PROGRAMMER</h2>
+                    <h2>FLAT DESIGN</h2>
+                    <p class="p-content">Lorem ipsum dolor 
+                     sit amet, consectetur adipiscin
+                     g elit, sed do eiusmod tempor incididunt ut 
+                     labore et dolore magna aliqua. 
+                     Ut enim ad minim veniam, quis
+                     nostrud exercitation ullamco 
+                     laboris nisi ut aliquip ex ea commodo 
+                     consequat. Duis aute irure 
+                     dolor in reprehenderit in voluptate velit esse 
+                     cillum dolore eu fugiat nulla
+                     pariatur. Excepteur sint occaecat
+                     cupidatat non proident, sunt
+                     in culpa qui officia deserunt 
+                     mollit anim id est laborum."</p>
+                    <button></button>
+                </div>
+        </div>
+        
+ <div class="col-md-6">
+    <div class="right-content">
+        <img src="bg.svg" alt="W3Schools.com" class="right-content-img">
+     </div>
+    </div>
+ <div>
+</div>
+  <div class="container">
+       
+  </div>
+
+<!-- The Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="signUpModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="signUpModal">SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="password" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="signUp">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<div>
+</body>
+</html>

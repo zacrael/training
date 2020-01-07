@@ -1,3 +1,5 @@
+  /* BASE RULES */
+  /* RESET */
 * {
     margin:0;
     padding: 0;
@@ -44,6 +46,7 @@
     border-radius: 40px;
 }
 .signup-btn-style{
+    
     margin:  10px  0  10px 0;
     border-radius: 40px;
 }
@@ -77,21 +80,12 @@
     display: block;
 }
 
-  @media screen and(max-width: 991px) { 
-    .right-content-img{
-        width: 100%;
-        height: 100%;
-        padding-top: 20px;
-        display: none;
-    }
-   
-   }  
-   @media screen and(max-width: 352px) { 
- 
-    .sspan-header{
-       
-        display: none;
-    }
 
+
+   @media only screen and (max-width: 450px){
+  
+    .dropdown-list{
+       display: none;
+    }
     
    }
